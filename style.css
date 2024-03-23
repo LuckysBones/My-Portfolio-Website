@@ -6,29 +6,36 @@ body{
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
+
+    background-image: url("website-wallpaper.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-nav{
-    margin-left: 0%;
-    margin-top: 0;
-    border-style: none;
-    /*border-radius: 5px;*/
-    /*align-content:;*/
+#nav-bar {
     background-color: rgba(120, 120, 120, 0.695);
-
+    top: 0;
+    right: 0;
 }
 
-
-#nav-bar{
-    margin-top: 0;
-    
+#nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-#nav{
-    margin-top: 0;
-    margin-left: 75%; 
-    margin-right: auto;
+#nav-bar li {
+    display: inline-block;
+    padding: 10px 20px;
 }
+
+#nav-bar li a {
+    color: #fff;
+    text-decoration: none;
+}
+
 
 #home{
     background-color: rgba(120, 120, 120, 0.695);
@@ -50,3 +57,12 @@ nav{
     text-align: center;
 }
 
+/*
+Old, but i didnt want to get rid of
+nav{
+    margin-left: 0%;
+    margin-top: 0;
+    border-style: none;
+    background-color: rgba(120, 120, 120, 0.695);
+}
+*/
