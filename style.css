@@ -9,18 +9,25 @@ body{
     background-size: cover;
 }
 
-.navbar {
+.navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    background-color: #333;
+}
+.navbar ul{
     list-style-type: none;
+
+    float: right;
+
     margin: 0;
     padding: 0;
     background-color: #333;
-
-    position: sticky;
-
-    overflow: hidden;
-    top: 0;
 }
+
 .navbar li{
+    align-items:flex-end;
     float: left;
 }
 
@@ -44,6 +51,15 @@ body{
 
 
 .home{
+    padding: 150px 50px 50px 100px;
+    margin-left: auto;
+    background-color: rgba(120, 120, 120, 0.695);
+    text-align: center;
+}
+
+
+.about{
+    padding: 150px 50px 50px 80px;
     margin-left: auto;
     background-color: rgba(120, 120, 120, 0.695);
     text-align: center;
