@@ -1,11 +1,6 @@
 body{
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
+    margin: 0;
+    padding: 0;
 
     background-image: url("website-wallpaper.jpg");
     background-attachment: fixed;
@@ -14,34 +9,45 @@ body{
     background-size: cover;
 }
 
-#nav-bar {
-    background-color: rgba(120, 120, 120, 0.695);
-    top: 0;
-    right: 0;
-}
-
-#nav-bar ul {
+.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: #f1f1f1;
+
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+
+    top: 0;
 }
 
-#nav-bar li {
-    display: inline-block;
-    padding: 10px 20px;
-}
-
-#nav-bar li a {
-    color: #fff;
+.navbar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
     text-decoration: none;
 }
 
+.navbar li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
 
-#home{
+.navbar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+.home{
+    margin-left: 25%;
     background-color: rgba(120, 120, 120, 0.695);
     text-align: center;
 }
 
+/*
 #projects{
     background-color: rgba(120, 120, 120, 0.695);
     text-align: center;
@@ -57,7 +63,7 @@ body{
     text-align: center;
 }
 
-/*
+
 Old, but i didnt want to get rid of
 nav{
     margin-left: 0%;
